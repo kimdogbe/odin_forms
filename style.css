@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'norse';
+  src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+  url('fonts/norse-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -29,11 +37,15 @@ body {
 }
 
 #left-pane {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   height: 100%;
   flex: 1;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("images/ferns.jpg");
+  padding-top: 20%;
 }
 
 #right-pane {
@@ -52,9 +64,9 @@ body {
 #form-card {
   display: flex;
   flex-direction: column;
-  background-color: var(--color2);
+  background-color: white;
   width: 100%;
-  box-shadow: 0px 10px 10px var(--color1);
+  box-shadow: 0 8px 10px -10px gray;
   padding: 20px;
   margin-top: 30px;
 }
@@ -92,4 +104,31 @@ label {
   display: block;
   font-size: 0.7rem;
   margin-bottom: 1px;
+}
+
+#left-pane p {
+  color: var(--color1);
+  font-size: 0.6rem;
+  position: absolute;
+  bottom: 10px;
+  align-self: center;
+}
+
+#left-pane a {
+  color: inherit;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  background-color: #2f4858a0;
+  color: var(--color1);
+  padding: 20px;
+  font-family: 'norse';
+  font-size: 3rem;
+  height: 20%;
+}
+
+#logo img {
+  height: 100%;
 }
