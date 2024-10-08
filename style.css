@@ -84,6 +84,10 @@ button {
   color: var(--color1);
 }
 
+button:hover {
+  opacity: 80%;
+}
+
 form {
   display: flex;
   flex-wrap: wrap;
@@ -131,4 +135,12 @@ label {
 
 #logo img {
   height: 100%;
+}
+
+input:user-invalid {
+  border: 1px solid red;
+}
+
+input:focus {
+  border: 1px solid#3f895e;
 }
