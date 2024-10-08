@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kodin Forms</title>
 </head>
 <body>
-  
+  <div id="container">
+    <div id="left-pane">
+      <div id="logo"></div>
+    </div>
+    <div id="right-pane">
+      <div id="intro">
+        <p>
+          This is not a real online service! You know you need somthing like this in your life to
+          help you realise your deepest dreams.
+          <br>
+          Sign up now to get started.
+        </p>
+
+        <p>You know you want to.</p>
+      </div>
+
+      <div id="form-card">
+        <form action="submit">
+          <label for="first-name">First Name</label>
+          <input type="text" placeholder="Tony" id="first-name" required>
+
+          <label for="last-name">Last Name</label>
+          <input type="text" placeholder="Tiger" id="last-name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="tony.tiger@kellogs.com" required>
+
+          <label for="phone-number">Phone Number</label>
+          <input type="tel" placeholder="08934814621" id="phone-number">
+
+          <label for="password">Password</label>
+          <input type="password" id="password" required>
+
+          <label for="password-confirm">Confirm Password</label>
+          <input type="password" id="password-confirm" required>
+        </form>
+      </div>
+
+      <button>Create Account</button>
+
+      <p>Already have an account? <a href="">Log in</a></p>
+    </div>
+  </div>
 </body>
 </html>
